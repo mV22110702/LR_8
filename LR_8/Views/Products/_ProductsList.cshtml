@@ -1,0 +1,13 @@
+﻿@model IEnumerable<LR_8.Models.Product>
+
+<div>
+    <h2>Products list</h2>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @(item.Id). @(item.Name) – @(item.Price)$ (@(item.CreatedDate))
+            </li>
+        }
+    </ul>
+</div>
